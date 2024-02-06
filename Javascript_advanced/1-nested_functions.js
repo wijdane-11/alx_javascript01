@@ -33,3 +33,4 @@ function outer() {
 
 // Call the outer function
 outer();
+()
