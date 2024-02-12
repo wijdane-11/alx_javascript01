@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Selecting Elements</title>
+  <style>
+    .highlight {
+      color: red;
+    }
+    .bolden {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <p class="highlight">This is a highlighted paragraph.</p>
+  <p>This is a normal paragraph.</p>
+
+  <script>
+    // Select all elements with the class "highlight"
+    var highlightedParagraphs = document.querySelectorAll(".highlight");
+    
+    // Loop through each highlighted paragraph
+    highlightedParagraphs.forEach(function(paragraph) {
+      // Modify the format to make the content boldened
+      paragraph.classList.add("bolden");
+    });
+  </script>
+</body>
+</html>
